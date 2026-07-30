@@ -52,7 +52,9 @@ This helps with formatting and automatically running checks and tests in your re
 
 ### GitHub workflows files
 **Need to have**
-These are [container.yaml](./.github/workflows/container.yaml) and [pythonpackage.yaml](./.github/workflows/pythonpackage.yaml). These trigger certain actions when you push changes in your repository to GitHub. The pythonpackage file runs linting and formatting checks. The container file uses the Dockerfile in the repository and creates a Docker Image that is stores it in the GitHub container [registry](https://github.com/orgs/fact-sealevel/packages) assocaited with the fact-sealevel org (or another location). 
+NOTE: Currently, these files are in `./.github/inactive-workflows` instead of `./.github/workflows`. When you are ready to run these commands (your module is nearly complete), move them into the `workflows/` directory and they will be picked up in CI/CD.
+
+These are [container.yaml](./.github/inactive-workflows/container.yaml) and [pythonpackage.yaml](./.github/inactive-workflows/pythonpackage.yaml). These trigger certain actions when you push changes in your repository to GitHub. The pythonpackage file runs linting and formatting checks. The container file uses the Dockerfile in the repository and creates a Docker Image that is stores it in the GitHub container [registry](https://github.com/orgs/fact-sealevel/packages) assocaited with the fact-sealevel org (or another location). 
 
 ### .python-version, uv.lock and pyproject.toml
 
